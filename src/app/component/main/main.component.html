@@ -1,0 +1,9 @@
+<div class="main">
+    <div class="left">
+        <app-card *ngFor="let item of list" [value]="item.value" [style]="item.style"></app-card>
+    </div>
+    <div class="right">
+        <button class="btn btn-primary" (click)="shuffle()">SHUFFLE</button>
+        <button class="btn btn-primary" (click)="sort()">SORT</button>
+    </div>
+</div>

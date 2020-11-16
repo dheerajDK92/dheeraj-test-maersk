@@ -1,0 +1,53 @@
+.main{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.left {
+    position: relative;
+    width:80%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right {
+    position: relative;
+    background: #EFF0F1;
+    width: 20%;
+    height: 80vh;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.btn {
+    width: 70%;
+    height: 50px;
+    margin: 2%;
+    color: #fff;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.btn-primary{
+    background: #72c3dc!important;
+    border-bottom: 3px solid #336170;
+}
+
+@media screen and (max-width:375px){
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .right {
+        width: 100%;
+        height: 15vh;
+        .btn {
+            width: 40%;
+        }
+    }
+    .left {
+        width:100%;
+    }
+}
